@@ -1,0 +1,80 @@
+body{
+    overflow-wrap: break-word;
+    height: 100vh;
+    width: 95%;
+    max-width: 100%;
+}
+.signInMainContainer{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    overflow-y: overlay;
+    background-color: red;
+}
+.signIn{
+    margin-left: 2.5%;
+    height:100%;
+    background-color:rgba(35, 36, 34, 0.438);
+    color: rgb(17, 17, 17);
+    width: 95%;
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    grid-column-gap: 0.5vh;
+}
+#chhangeButton{
+    padding:4vw;
+    color:#4dff29;
+    background-color: rgba(26, 26, 26, 0.945);
+}
+#signinForm{
+    background-color:  rgba(20, 20, 20, 0.582);
+    padding: 6vw;
+    color:#4dff29
+}
+.inputsignin {
+    background-color: transparent;
+    border:0;
+    outline: 0;
+    border-bottom: 1px solid rgb(136, 136, 136);
+    width: 100%;
+    height: 7vh;
+    letter-spacing:4px;
+    cursor:text;
+    font-size: 2vw;
+}
+.inputsignin:focus{
+    color: white;
+    background-color:transparent;
+    border-bottom: 1px solid rgb(255, 56, 56);
+    /* border-image: linear-gradient(to right,red,blue); */
+}
+#signinForm input[type="button"]{
+    background-color:rgba(77,255,41,0.438);
+    color:white;
+    letter-spacing: 0.5vw;
+    width: 100%;
+    height: 7vh;
+    border: 0;
+}
+#signinForm input[type="button"]:hover{
+    transition: ease-in 0.2s;
+    color: white;
+    letter-spacing: 1vw;
+    cursor: pointer;
+    background-color: rgba(16, 253, 48, 0.788);
+}
+#logIn{
+    background-color:rgba(77,255,41,0.438);
+    color:white;
+    letter-spacing: 0.5vw;
+    width: 100%;
+    height: 7vh;
+    border: 0;
+}
+#logIn:hover{
+    transition: ease-in 0.2s;
+    color: white;
+    letter-spacing: 1vw;
+    cursor: pointer;
+    background-color: rgba(16, 253, 48, 0.788);
+    }

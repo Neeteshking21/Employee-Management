@@ -1,0 +1,425 @@
+/*  //header
+//get
+// login
+// sign 
+// about
+//contact
+// feedback & rating  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Roboto Slab', serif; */
+}
+body{
+    display: grid;
+    /* transition: 4s ease-in-out; */
+    grid-template-areas:
+    'header',
+    'getstart',
+    'sign',
+    'about';
+    height: 400vh;
+    background-attachment:fixed;
+    overflow:auto;
+    background-color:rgb(70, 65, 65);
+    /* transition: 4s ease-in-out; */
+}
+header{
+    grid-area: header;
+    z-index: 7;
+    background-color: black;
+    height: 7vh;
+    width: 100%;
+    color:rgb(165, 154, 154);
+    position:fixed;
+    /* word-wrap: break-word; */
+    /* align-content: center; */
+    /* overflow: auto; */
+    border: 1px solid rgb(250, 34, 34);
+    display: grid; 
+    grid-template-areas: 'logo link link link';
+    font-family: 'Roboto Slab', serif;
+}
+/* header ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+    /* display: grid;
+    grid-template-areas: home sign about contact feedback; 
+}*/
+/*header .logo li{
+     margin: 2vh 8vw 0 3vw;
+
+}
+header .link li{
+    margin: 2vh 8.2vw 0 3vw;
+}
+header .link li a{
+    color: cornsilk;
+    text-decoration: none;
+
+}
+h3{
+    width: 10vw; 
+} */
+
+header .logo{
+    grid-area: logo;
+    padding-top: 1vw;
+    margin-left: 2vw;
+    width: 0;
+}
+header .link {
+    grid-area: link;
+    display: grid;
+    grid-template-areas:'home sign about contact feedback' ;
+    padding-top: 1vw;
+
+}
+header ul{
+    list-style: none;
+}
+header ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    cursor: pointer;
+}
+#home{
+    grid-area: home;
+}
+#sign{
+    grid-area: sign;
+}
+#about{
+    grid-area: about;
+}
+#contact{
+    grid-area: contact;
+}
+#feedback{
+    grid-area: feedback;
+}
+a:hover{
+    color:rgb(250, 34, 34);
+    /* transition: ease-in-out 0.3s; */
+    text-shadow: 1px 2px 3px black, 0 0 25px red, 0 0 5px red;
+}
+
+c
+#quote{
+    position: absolute;
+    top: 10vh;
+    left: 41vh;
+    text-shadow: 1px 2px 3px rgb(224, 200, 200), 0 0 25px red, 0 0 5px red;
+    color:wheat;
+    font-size: 3.4vw;
+}
+#quote1{
+    position: absolute;
+    top:30vh;
+    left: 12vw;
+    color: whitesmoke;
+    font-family: 'Titillium Web', sans-serif;
+    font-size:3vw;
+    font-weight: 550;
+}
+#logo:hover{
+    content: url(./red.png);
+    height:7vh;
+    margin-top: -2vh;
+    /* transition: ease-in-out 0.4s; */
+}
+.getstart span {
+    overflow: hidden;  
+    white-space: nowrap; 
+    margin: 0 auto;
+    letter-spacing: .10em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(48, end),
+      blink-caret .75s step-end infinite;
+      animation-iteration-count:infinite;
+      animation-duration: 2s; 
+      animation-delay:2s;
+      /* width: 3vw; */
+      animation-direction:alternate;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 76% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color:rgb(250, 34, 34); }
+  }
+  #startbutton{
+      position: absolute;
+      top:53%;
+      left: 43%;
+      height:8vh;
+      width: 13vw;
+      border:0.3vh solid #fe9090;
+      color: #fe9090;
+      border-radius: 1vw;
+      background-color: rgba(250, 34, 34,0);
+      cursor: pointer;
+      font-size: 1.5vw;
+      font-weight: bold;
+  }
+  #startbutton:hover{
+    position: absolute;
+    top:53%;
+    left: 43%;
+    border:0.3vh solid #0b7ca8;
+    color: rgb(245, 245, 245);
+    background-color: rgb(2, 123, 160);
+    border-radius: 1vw;
+    /* transition: 0.5s; */
+    cursor: pointer;
+  }
+  #startbutton:active{
+    position: absolute;
+    top:53%;
+    left: 43%;
+    border:0.3vh solid #0b7ca8;
+    color: rgb(245, 245, 245);
+    background-color: rgb(2, 123, 160);
+    border-radius: 1vw;
+    /* transition: 0.5s; */
+    cursor: progress;
+  }
+
+  .signup{
+    grid-area: sign;
+    height: 100vh;
+    width: 100%;
+    /* transition: ease-in-out 2s; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  }
+  .signup .coverpage{
+
+      grid-area: cover;
+      display: grid;
+      position: absolute;
+      top:125%;
+      left: 20%;
+      /* background-color: transparent; */
+      border: 2px solid opacity;
+      word-wrap: break-word;
+      width: 63%;
+      height: 70%;
+      box-shadow: 0 16px 62px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      grid-template-areas: 
+      'page form'
+      ;
+  }
+  .page{
+      background-image: url(./signIn.gif);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width:27.6vw;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  form{
+      grid-area: form;
+      width: 103%;
+      height:100%;
+      right:3%;
+      position: relative;
+      /* margin-left: 10%; */
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      background-image: linear-gradient(to right , rgb(84, 84, 252), rgb(204, 204, 236))
+
+  }
+  h3{
+      margin-left:40%;
+      color: white;
+      /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    }
+    form input{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-left: 2vw;
+    width: 90%;
+    height: 5vh;
+    background-color: rgba(46, 42, 42, 0.65);
+    border:1px solid rgb(250, 34, 34);
+    border-radius: 0.5vw;
+    color:white;
+    box-shadow: 1px 2px 3px black, 0 0 25px red, 0 0 5px red;
+}
+form input[type="checkbox"]{
+    height: 2vh;
+    width: 1vw;
+    
+}
+form input[type="submit"]{
+    background-image: linear-gradient(to right,rgb(84,84,252) , rgb(250, 34, 34));
+    cursor:pointer;
+}
+form input[type="submit"]:hover{
+    background-image: linear-gradient(to right , rgb(250, 34, 34),rgb(84,84,252));
+}
+
+  .about{
+      background-color: rgb(70, 65, 65);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 100vh;
+    width: 100%;  
+    grid-area: about;
+    display: grid; 
+}
+.innerAbout{
+    height: 90%;
+    width: 96%;
+    position: absolute;
+    left: 2%;
+    top:208%;
+    background-color: rgb(70, 65, 65);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.block{
+
+}
+#block1{
+    height: 10%;
+    /* background-image: linear-gradient(black, rgb(226, 89, 89)); */
+    color: white;
+    text-shadow: 7px 7px 6px black, 4px 0 25px red, 0 0 5px red;
+    text-align: center;
+    background-color:rgb(70, 65, 65);
+    /* border:2px solid rgb(250, 34, 34); */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#block2{
+    height: 50%;
+    /* border: 1px solid rgb(250, 34, 34); */
+    background-image: url(./employee.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment:fixed; */
+    background-position: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#block3{
+    margin-top: 0.5vw;
+    height: 40%;
+    display: grid;
+    overflow-wrap: break-word;
+    grid-template-columns: 30% 30% 30%;
+    justify-content:end;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.aboutCards{
+
+   height: 100%;
+   width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  grid-gap: 3vw;
+  text-align: center;
+  
+}
+.aboutCards:hover{
+    height: 100%;
+    width: 80%;
+   background-color: white;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   grid-gap: 3vw;
+   text-align: center;
+   opacity: 0.8;
+}
+#block2:hover{
+    height: 50%;
+    background-image: url(./employee.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment:fixed; */
+    background-position: center;
+    opacity: 0.8;
+}
+.contact{
+    height: 100vh;
+    width: 100%;
+    color: #fe9090;
+    background-color: rgba(20, 20, 20, 0.582);
+}
+.innerContact{
+    height: 100vh;
+    width: 85vw;
+    background-color:rgba(20, 20, 20, 0.582);
+    margin-left: 6vw;
+    display: grid;
+    grid-template-rows: 20vh 80vh;
+}
+.contactHeader{
+    /* border: 2px solid white; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#contactHeader2{
+    display: grid;
+    overflow-wrap: break-word;
+    grid-template-rows: 15vh 65vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+}
+.contactInfo{
+    /* border: 1px solid green; */
+    
+}
+#contactInfo2{
+    /* border: 2px solid yellow; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: grid;
+    grid-template-areas: 'left right';
+}
+.contactInfoIn{
+    /* border: 2px solid brown; */
+}
+#contactInfoIn1{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    grid-area: left;
+    padding-left: 2vw;
+    overflow-wrap: break-word;
+}
+#contactInfoIn2{
+    grid-area: right;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 4vw;
+    color:#41
+    padding-left: 4vw;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+#contactInfoIn2 a{
+    text-decoration: none;
+    color:rgb(34, 250, 63)
+}
+#contactInfoIn1 section{
+   height: 100%;
+}
+#contactButton{
+    border-radius: 1vw;height: 8vh;width:15vw;position: relative;left:16%; background-color: transparent; border:1.5px solid red; color:white; cursor: pointer;
+}
+#contactButton:hover{
+    border-radius: 1vw;
+    height: 8vh;
+    width:15vw;
+    position: relative;
+    left:16%;
+    background-color: rgba(255, 153, 153, 0.205);
+    border:1.5px solid rgb(224, 200, 200);
+    color:rgb(224, 193, 193) ;
+    /* transition: ease-in 0.17s; */
+    cursor: pointer;
+}

@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif ;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+body{
+    /* border: 2px solid black; */
+    height: 400vh; 
+    background-image: url(./gray.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    height: 100%;
+    max-width: 90%;
+    word-wrap: break-word;
+    min-width:50%;
+    margin:auto;
+    background-image: linear-gradient(rgba(49, 49, 49, 0.582), rgba(31, 31, 32, 0.479)),url(./help.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-wrap:anywhere ;
+    display: grid;
+    grid-template-areas:
+    'getstart'
+    'aware';
+}
+
+/* .navbar{
+    display: grid;
+    grid-template-areas: 'logo menu';
+    grid-template-columns: 4fr 1fr;
+}
+.navbar span{
+    height: 10vh ;
+}
+.navbar img{
+    height: auto;
+    padding: 1vh;
+    width: 9%;
+    max-width: 400px;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+.navbar span span{
+    margin-top: 2vh;
+} */
+.navbar{
+    background-color: rgba(0,0,0,0  );
+    position: absolute;
+    top: 3%;
+    z-index: 900;
+    /* border: 2px solid black; */
+    width: 89.7%;
+    height: 7vh;
+   
+   
+}
+.navbar ul {
+   list-style: none;
+   display: grid;
+   grid-template-areas: 'logo logo logo logo menu';
+   word-wrap: break-word;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.navitems{
+    margin-left:3vw;
+    margin-top: 1vh;
+    word-wrap: break-word;
+}
+#navitem1{
+    grid-area:logo;
+}
+#navitem2{
+    grid-area: menu;
+    position: fixed;
+    left: 75vw;
+}
+.dropdown{
+    overflow-wrap: anywhere;
+    float:right;
+    clear: both;
+    position: fixed;
+    height: 100vh;
+    width: 30vw;
+    /* border: 2px solid blue; */
+    display:none;
+    z-index: 1000;
+    grid-template-rows: 1fr 5fr 3fr;
+    overflow-wrap: break-word;
+    animation-name: bounceScale;
+    animation-duration: 0.5s;
+    background-color: rgb(20, 20, 20);
+    color:  #4dff29;
+    animation-timing-function: ease-in-out 0.5s;
+}
+#dropsection3{
+    overflow-y: overlay;
+}
+#dropsection1{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    word-wrap: break-word;
+}
+#dropsection2 ul{
+    list-style: none;
+}
+#dropsection2 ul li{
+    overflow-wrap: anywhere;
+    border-bottom: 2px solid #29d4ff;
+    padding: 4.5vh;
+}
+#dropsection2 ul li a{
+    text-decoration: none;
+    color:  #4dff29;
+}
+#dropsection2 ul li:hover{
+    background-color: rgb(26, 25, 25);
+    color: rgb(26, 25, 25);
+    transition: ease-in-out 0.6s;
+}

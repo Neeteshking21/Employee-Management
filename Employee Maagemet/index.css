@@ -1,0 +1,559 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Lora', serif ;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    body{
+        /* border: 2px solid black; */
+        height: 400vh; 
+        background-image: url(./gray.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .container{
+        height: 100%;
+        max-width: 90%;
+        word-wrap: break-word;
+        min-width:50%;
+        margin:auto;
+        background-image: linear-gradient(rgba(49, 49, 49, 0.582), rgba(31, 31, 32, 0.479)),url(./help.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        overflow-wrap:anywhere ;
+        display: grid;
+        grid-template-areas:
+        'getstart'
+        'aware';
+    }
+
+    /* .navbar{
+        display: grid;
+        grid-template-areas: 'logo menu';
+        grid-template-columns: 4fr 1fr;
+    }
+    .navbar span{
+        height: 10vh ;
+    }
+    .navbar img{
+        height: auto;
+        padding: 1vh;
+        width: 9%;
+        max-width: 400px;
+    }
+    .navbar a{
+        text-decoration: none;
+        color: white;
+    }
+    .navbar span span{
+        margin-top: 2vh;
+    } */
+    .navbar{
+        background-color: rgba(0,0,0,0  );
+        position: absolute;
+        top: 3%;
+        z-index: 900;
+        /* border: 2px solid black; */
+        width: 89.7%;
+        height: 7vh;
+       
+       
+    }
+    .navbar ul {
+       list-style: none;
+       display: grid;
+       grid-template-areas: 'logo logo logo logo menu';
+       word-wrap: break-word;
+    }
+    .navbar ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    .navitems{
+        margin-left:3vw;
+        margin-top: 1vh;
+        word-wrap: break-word;
+    }
+    #navitem1{
+        grid-area:logo;
+    }
+    #navitem2{
+        grid-area: menu;
+        position: fixed;
+        left: 75vw;
+    }
+    .dropdown{
+        overflow-wrap: anywhere;
+        float:right;
+        clear: both;
+        position: fixed;
+        height: 100vh;
+        width: 30vw;
+        /* border: 2px solid blue; */
+        display:none;
+        z-index: 1000;
+        grid-template-rows: 1fr 5fr 3fr;
+        overflow-wrap: break-word;
+        animation-name: bounceScale;
+        animation-duration: 0.5s;
+        background-color: rgb(20, 20, 20);
+        color:  #4dff29;
+        animation-timing-function: ease-in-out 0.5s;
+    }
+    #dropsection3{
+        overflow-y: overlay;
+    }
+    #dropsection1{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        word-wrap: break-word;
+    }
+    #dropsection2 ul{
+        list-style: none;
+    }
+    #dropsection2 ul li{
+        overflow-wrap: anywhere;
+        border-bottom: 2px solid #29d4ff;
+        padding: 4.5vh;
+    }
+    #dropsection2 ul li a{
+        text-decoration: none;
+        color:  #4dff29;
+    }
+    #dropsection2 ul li:hover{
+        background-color: rgb(26, 25, 25);
+        color: rgb(26, 25, 25);
+        transition: ease-in-out 0.6s;
+    }
+    .contact{
+        height:auto;
+        width: 100%;
+        
+    }
+    .getstart{
+        grid-area: getstart;
+        display: grid;
+        z-index: 1;
+        /* background-image:linear-gradient(rgba(56, 51, 51, 0.65),rgba(46, 42, 42, 0.65)), url(./dark.jpg); */
+        background-image:linear-gradient(to right,rgba(1, 63, 105, 0.61),rgba(1, 68, 16, 0.571)),url(./Avis\ Budget\ Office\ 2.jfif); 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 99.5vh;
+        width: 100%;
+    }
+    #quote1{
+        position: absolute;
+        top:30vh;
+        left: 8vw;
+        color: white;
+        font-family: 'Titillium Web', sans-serif;
+        font-size:3vw;
+        font-weight: 550;
+    }
+    .getstart span {
+        overflow: hidden;  
+        white-space: nowrap; 
+        margin: 0 auto;
+        letter-spacing: .10em; /* Adjust as needed */
+        animation: 
+          typing 3.5s steps(48, end),
+          blink-caret .75s step-end infinite;
+          animation-iteration-count:infinite;
+          animation-duration: 2s; 
+          animation-delay:1s;
+          /* width: 3vw; */
+          animation-direction:alternate;
+      }
+      #startbutton{
+        position: absolute;
+        top:53%;
+        left: 43%;
+        height:8vh;
+        width: 13vw;
+        border:0.3vh solid #4dff29;
+        color:  #29d4ff;
+        border-radius: 1vw;
+        background-color:rgba(77,255,41,0.438);
+        cursor: pointer;
+        font-size: 1.5vw;
+        font-weight: bold;
+    }
+    #startbutton:hover{
+      position: absolute;
+      top:53%;
+      left: 43%;
+      border:0.3vh solid  #29d4ff;
+      color:  #4dff29;
+      background-color: rgba(41, 212, 255, 0.438);
+      border-radius: 1vw;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+    #startbutton:active{
+      position: absolute;
+      top:53%;
+      left: 43%;
+      border:0.3vh solid #0b7ca8;
+      color: rgb(245, 245, 245);
+      background-color: rgb(2, 123, 160);
+      border-radius: 1vw;
+      transition: 0.5s;
+      cursor: progress;
+    }
+    .aware{
+        grid-area: aware;
+        height: 300vh;
+        width: 100%;
+        background-image: linear-gradient(to right,rgba(19, 45, 59, 0.795), #202020b7),url(./city.jpg);
+        background-attachment: fixed;
+        /* background-image: url(./please.jpg); */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 1px solid transparent;
+        display:grid;
+        grid-template-rows: 30vh 120vh;
+        /* border-radius: 8vw; */
+    }
+    #awareH1{
+        margin-top: 10vh;
+        margin-left: 22vw;
+
+    }
+    .login{
+        margin-left: 2.5%;
+        height: 50%;
+        max-height: auto;
+        min-height: 30%;
+        background-color:rgba(35, 36, 34, 0.438);
+        color: rgb(17, 17, 17);
+        width: 95%;
+        display:grid;
+        grid-template-columns: 3fr 5fr;
+        grid-column-gap: 0.5vh;
+    }
+    #chhangeButton{
+        padding:4vw;
+        color:#4dff29;
+        background-color: rgba(26, 26, 26, 0.945);
+    }
+    #loginForm{
+        background-color:  rgba(20, 20, 20, 0.582);
+        padding: 6vw;
+        color:#4dff29
+    }
+    .inputLogin {
+        background-color: transparent;
+        border:0;
+        outline: 0;
+        border-bottom: 1px solid rgb(136, 136, 136);
+        width: 100%;
+        height: 7vh;
+        letter-spacing:4px;
+        cursor:text;
+        font-size: 2vw;
+    }
+    .inputLogin:focus{
+        color: white;
+        background-color:transparent;
+        border-bottom: 1px solid rgb(255, 56, 56);
+        /* border-image: linear-gradient(to right,red,blue); */
+    }
+    #loginForm input[type="button"]{
+        background-color:rgba(77,255,41,0.438);
+        color:white;
+        letter-spacing: 0.5vw;
+        width: 100%;
+        height: 7vh;
+        border: 0;
+    }
+    #loginForm input[type="button"]:hover{
+        transition: ease-in 0.2s;
+        color: white;
+        letter-spacing: 1vw;
+        cursor: pointer;
+        background-color: rgba(16, 253, 48, 0.788);
+    }
+    #signIn{
+        background-color:rgba(77,255,41,0.438);
+        color:white;
+        letter-spacing: 0.5vw;
+        width: 100%;
+        height: 7vh;
+        border: 0;
+    }
+    #signIn:hover{
+        transition: ease-in 0.2s;
+        color: white;
+        letter-spacing: 1vw;
+        cursor: pointer;
+        background-color: rgba(16, 253, 48, 0.788);
+        }
+    #aware form{
+        /* height:10vh;
+        width:10vw; */
+        
+    }
+    .signIn{
+        
+        margin-left: 2.5%;
+        height:70%;
+        background-color:rgba(35, 36, 34, 0.438);
+        color: rgb(17, 17, 17);
+        width: 95%;
+        display: none;
+        overflow-y: overlay;
+        grid-template-columns: 3fr 5fr;
+        grid-column-gap: 0.5vh;
+    }
+    #chhangeButton{
+        height: 100%;
+        padding:4vw;
+        color:#4dff29;
+        background-color: rgba(26, 26, 26, 0.945);
+    }
+    #signinForm{
+        background-color:  rgba(20, 20, 20, 0.582);
+        padding: 6vw;
+        height: 100%;
+        color:#4dff29
+    }
+    .inputsignin {
+        background-color: transparent;
+        border:0;
+        outline: 0;
+        border-bottom: 1px solid rgb(136, 136, 136);
+        width: 100%;
+        height: 7vh;
+        letter-spacing:4px;
+        cursor:text;
+        font-size: 2vw;
+    }
+    .inputsignin:focus{
+        color: white;
+        background-color:transparent;
+        border-bottom: 1px solid rgb(255, 56, 56);
+        /* border-image: linear-gradient(to right,red,blue); */
+    }
+    #signinForm input[type="button"]{
+        background-color:rgba(77,255,41,0.438);
+        color:white;
+        letter-spacing: 0.5vw;
+        width: 100%;
+        height: 7vh;
+        border: 0;
+    }
+    #signinForm input[type="button"]:hover{
+        transition: ease-in 0.2s;
+        color: white;
+        letter-spacing: 1vw;
+        cursor: pointer;
+        background-color: rgba(16, 253, 48, 0.788);
+    }
+    #logIn{
+        background-color:rgba(77,255,41,0.438);
+        color:white;
+        letter-spacing: 0.5vw;
+        width: 100%;
+        height: 7vh;
+        border: 0;
+    }
+    #logIn:hover{
+        transition: ease-in 0.2s;
+        color: white;
+        letter-spacing: 1vw;
+        cursor: pointer;
+        background-color: rgba(16, 253, 48, 0.788);
+        }
+    .contact{
+        height: 100vh;
+        width: 95%;
+        margin-left: 2.5vw;
+        color: #fe9090;
+        background-color:transparent;
+    }
+    .innerContact{
+        height: 100vh;
+        width: 95%;
+        background-color:rgba(20, 20, 20, 0.726);
+        margin-left: 1.5vw;
+        display: grid;
+        grid-template-rows: 20vh 80vh;
+    }
+    .contactHeader{
+        /* border: 2px solid white; */
+        box-shadow: 0 4px 8px 0 rgb(32, 36, 29), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    #contactHeader2{
+        display: grid;
+        overflow-wrap: break-word;
+        grid-template-rows: 15vh 65vh;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+       
+    }
+    .contactInfo{
+        /* border: 1px solid green; */
+        
+    }
+    #contactInfo2{
+        /* border: 2px solid yellow; */
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        display: grid;
+        grid-template-areas: 'left right';
+    }
+    .contactInfoIn{
+        /* border: 2px solid brown; */
+    }
+    #contactInfoIn1{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        grid-area: left;
+        padding-left: 2vw;
+        overflow-wrap: break-word;
+    }
+    #contactInfoIn1 input,textarea{
+        background-color: transparent;
+        border: 0;
+        outline: 0;
+        color: red;
+        border-bottom:1px solid #41ff1f;
+    }
+   #contactInfoIn1 input:focus{
+        background-color: transparent;
+        border: 0;
+        outline: 0;
+        color: #41ff1f;
+        border-bottom:1px solid red;
+    }
+    
+    #contactInfoIn2{
+        grid-area: right;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding: 4vw;
+        color:#41ff1f;
+        padding-left: 4vw;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+    
+    #contactInfoIn2 a{
+        text-decoration: none;
+        color:#41ff1f;
+    }
+    #contactInfoIn2 a:hover{
+        text-decoration: none;
+        color:#29d4ff;
+    }
+    #contactInfoIn1 section{
+       height: 100%;
+    }
+    #contactButton{
+        border-radius: 1vw;height: 8vh;width:15vw;position: relative;left:16%; background-color: transparent; border:1.5px solid #4dff29; color:#4dff29; cursor: pointer;
+    }
+    #contactButton:hover{
+        border-radius: 1vw;
+        height: 8vh;
+        width:15vw;
+        position: relative;
+        left:16%;
+        border: 0;
+        transition: ease-in-out 0.5s;
+        letter-spacing: 4px;
+        background-color :#87ff6f5e;
+        border:1.5px solid  #4dff29;
+        color :#41ff1f ;
+        /* transition: ease-in 0.17s; */
+        cursor: pointer;
+    }
+      /* The typing effect */
+      @keyframes typing {
+        from { width: 0% }
+        to { width: 88% }
+      }
+      
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color:rgb(250, 34, 34); }
+      }
+    @media screen and (max-width:650px){
+        .dropdown{
+            overflow-wrap: anywhere;
+            height: 100vh;
+            position: fixed;
+            width: 40%;
+            /* border: 2px solid blue; */
+            display: grid;
+            grid-template-rows: 1fr 5fr 3fr;
+            overflow-wrap: break-word;
+            animation-name:bounceScale ;
+            animation-duration: 0.5s;
+             animation-timing-function: ease-in-out 0.5s;
+        }
+
+        .aware{
+            width:90vw;
+            display: grid;
+            /* grid-template-columns: 10vh 90vh; */
+        }
+        #awareH1{
+            margin-top: 10vh;
+            margin-left: 22vw;
+        }
+        .login{
+            /* background-image: url(./login-blue.jpg);                      */
+            background-color: teal;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            color: rgb(249, 249, 250);
+            width: 95%;
+           
+        }
+    }
+    @media screen and (max-width:320px){
+        .dropdown{
+            overflow-wrap: anywhere;
+            height: 100vh;
+            width: 100%;
+            /* border: 2px solid blue; */
+            display: grid;
+            grid-template-rows: 1fr 5fr 3fr;
+            overflow-wrap: break-word;
+            animation-name:bounceScale ;
+            animation-duration: 0.5s;
+            animation-timing-function: ease-in-out 0.5s;
+        }
+        .aware{
+            width: 100%;
+        }
+    }
+    @keyframes bounceScale {
+        0%{
+            opacity: 0;
+            width: 6vw;
+        }
+        25%{
+            opacity: 0;
+            width: 12vw;
+        }
+        50%{
+            opacity: 0;
+            width: 18vw;
+        }
+        75%{
+            opacity: 0;
+            width: 24vw;
+        }
+        100%{
+            opacity: 1;
+            width: 30vw;
+        }
+    } 
