@@ -18,10 +18,10 @@
             <ul>
                 
                 <li class="navitems" id="navitem1"><a href="#" style="font-size: 4vh;">logo</a></li>
-                <li class="navitems" id="navitem2"><button id="menu" onclick="navbar()" style="background-color: transparent;outline:0;border: 0;color: white;font-size: 3vh;">Menu</button></li>
+                <!-- <li class="navitems" id="navitem2"><button id="menu" onclick="navbar()" style="background-color: transparent;outline:0;border: 0;color: white;font-size: 3vh;">Menu</button></li> -->
             </ul>
         </div>
-        <div class="dropdown" id="dropdown">
+        <!-- <div class="dropdown" id="dropdown">
             <div class="dropsection" id="dropsection1">
                 <h3 style="overflow-wrap:anywhere;margin-top: 4vh;color:#29d4ff">Navigation</h3>
                 <button data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" id="btn"
@@ -46,7 +46,7 @@
 
                 </div>
             </div>
-        </div>
+        </div> -->
         <section class="getstart" id="getstart">
             <span id="quote1"> “Don’t Let Yesterday Take Up Too Much of Today.”</span><br>
             <button type="button" id="startbutton">Get Started</button>
@@ -65,8 +65,8 @@
                         <input type="email" name="email" id="inputEmail" class="inputLogin"required placeholder="User Id"><br><br>
                         <input type="password" name="password" id="password" class="inputLogin" required placeholder="Password"><br><br><br>
                         <h1>-----------------Login as a user-----------------</h1><br>    
-                        <input type="email" name="adminEmail" id="inputEmail" class="inputLogin" required placeholder="Admin Id">
-                        <input type="password" name="adminPassword" id="AdminPassword" class="inputLogin" required placeholder="Admin Password" ><br><br>
+                        <input type="email" name="adminEmail" id="inputEmail" class="inputLogin" required placeholder="CHRO Id">
+                        <input type="password" name="adminPassword" id="AdminPassword" class="inputLogin" required placeholder="CHRO Password" ><br><br>
                         <input type="radio" name="remember" id="remember" > Remember me<br><br>
                         <input type="button" value="submit">
                     </form>
@@ -81,20 +81,21 @@
                     <button id="logIn" onclick="formchange()">Log In</button>
                 </section>
                 <section id="signinForm" data-aos="flip-up" data-aos-duration="2000">
-                    <form action="#">
-                        <!-- <input type="email" name="email" id="inputEmail" class="inputLogin"required placeholder="User Id"><br><br> -->
+                    <form action="./Admin Landing/AdminLandig.html" method="POST">
+                        <!-- <input type="email" name="email" id="inputEmail" class="inputLogin"required placeholder="User Id"><br><br>
                         <input type="email" name="email" id="inputEmail" class="inputsignin"required placeholder="Email"><br><br>
                         <input type="password" name="password" id="password" class="inputsignin" required placeholder="Password"><br><br><br>
                         <input type="password" name="password" id="password" class="inputsignin" required placeholder="Confirm Password"><br><br><br>
-                        <h1>-----Sign as a Admin-----</h1><br>    
+                        <h1>-----Sign as a Admin-----</h1><br>     -->
+                        <input type="text" name="adminEmail" id="inputEmail" class="inputsignin" required placeholder="Name">
                         <input type="email" name="adminEmail" id="inputEmail" class="inputsignin" required placeholder="Email">
                         <input type="number" name="adminEmail" id="inputEmail" class="inputsignin" required placeholder="Phone">
-                        <input type="password" name="adminPassword" id="AdminPassword" class="inputsignin" required placeholder="Admin Password" ><br><br>
+                        <input type="password" name="adminPassword" id="AdminPassword" class="inputsignin" required placeholder="User Password" ><br><br>
                         <input type="password" name="adminPassword" id="AdminPassword" class="inputsignin" required placeholder="confirm Password" ><br><br>
                         <input type="checkbox" name="policy" id="policy" >I accept Empleado's Privacy & Policy<br><br>
-                        <input type="button" value="submit">
+                        <input type="button" value="Register">
                     </form>
-                </section>  
+                </section>   
         </div>
             <section class="contact" id="ourcontact" data-aos="zoom-in" data-aos-duration="1000">
                 <div class="innerContact">

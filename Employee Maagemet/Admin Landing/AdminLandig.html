@@ -1,53 +1,106 @@
+<?php
+  $servername
+?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./AdminLandig.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script type="text/script " src="./AdminLandig.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<link rel="stylesheet" href="./AdminLandig.css">
+<title>Welcome CHRO</title>
 </head>
-
 <body>
     <div class="container">
         <div class="navbar">
             <ul>
                 
                 <li class="navitems" id="navitem1"><a href="#" style="font-size: 4vh;">logo</a></li>
-                <li class="navitems" id="navitem2"><button id="menu" onclick="navbar()" style="background-color: transparent;outline:0;border: 0;color: white;font-size: 3vh;">Menu</button></li>
+                <!-- <li class="navitems" id="navitem2"><button id="menu" onclick="navbar()" style="background-color: transparent;outline:0;border: 0;color: white;font-size: 3vh;">Menu</button></li> -->
             </ul>
         </div>
-        <div class="dropdown" id="dropdown">
-            <div class="dropsection" id="dropsection1">
-                <h3 style="overflow-wrap:anywhere;margin-top: 4vh;color:#29d4ff">Navigation</h3>
-                <button data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" id="btn"
-                    style="height: 4vh;width:5vw;overflow-wrap: anywhere;margin-left: 8vw;margin-top: 4vh;"
-                    onclick="navbar()">X</button>
-            </div>
-            <div class="dropsection" id="dropsection2">
-                <ul>
-                    <li class="menues" id="menues1"><a href="#">Home</a></li>
-                    <li class="menues" id="menues2"><a href="#">Login</a></li>
-                    <li class="menues" id="menues3"><a href="#">SignIn</a></li>
-                    <li class="menues" id="menues4"><a href="#">feedback</a></li>
-                </ul>
-            </div>
-            <div class="dropsection" id="dropsection3">
-
-                <div class="contact">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dicta, mollitia pariatur, amet
-                        aliquid
-                        autem eligendi sint quisquam perspiciatis sapiente officia consectetur maxime ducimus doloribus.
-                        Nemo eos nulla magnam? Libero.</p>
-
-                </div>
-            </div>
+        <div class="information">
+            <table class="table">
+                <thead class="thead-dark bg-dark text-success">
+                  <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Contact No</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td><button>Update</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td><button>Update</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                    <td><button>Update</button></td>
+                    <td><button>Delete</button></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <table class="table">
+                <thead class="thead-light  bg-dark text-success">
+                  <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Contact No.</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td><button>Update</button></td>
+                    <td><button>Delete</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td><button>Update</button></td>
+                    <td><button>Delete</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                    <td><button>Update</button></td>
+                    <td><button>Delete</button></td>
+                  </tr>
+                </tbody>
+              </table>
         </div>
     </div>
-  </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
+</body>
 </html>
